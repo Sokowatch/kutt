@@ -116,21 +116,12 @@ const Header: FC = () => {
           >
             <Li>
               <ALink
-                href="//github.com/thedevs-network/kutt"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="GitHub"
+                href={process.env.HOME_URL}
+                title="Team App"
                 fontSize={[14, 16]}
               >
-                GitHub
+                Team App
               </ALink>
-            </Li>
-            <Li>
-              <Link href="/report">
-                <ALink href="/report" title="Report abuse" fontSize={[14, 16]}>
-                  Report
-                </ALink>
-              </Link>
             </Li>
           </Flex>
         )}
