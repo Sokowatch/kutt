@@ -14,8 +14,7 @@ const Homepage = () => {
 
   return (
     <AppWrapper>
-      <Shortener />
-      {!isAuthenticated && <NeedToLogin />}
+      {isAuthenticated && <Shortener />}
       {isAuthenticated && <LinksTable />}
       <Footer />
     </AppWrapper>
